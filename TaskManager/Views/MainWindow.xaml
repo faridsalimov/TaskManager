@@ -1,0 +1,74 @@
+﻿<Window x:Class="TaskManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        Title="Task Manager" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6.5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ListView Grid.Column="1" ItemsSource="{Binding Processes}" SelectedItem="{Binding SelectedProcess}" Margin="10,10,10,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" Width="80">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Id}" FontSize="15" HorizontalAlignment="Center"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <GridViewColumn Header="Name" Width="250">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding ProcessName}" FontSize="15" HorizontalAlignment="Center"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView Grid.Column="0" ItemsSource="{Binding BlacklistProcesses}" Margin="10,10,615,0" Grid.ColumnSpan="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" Width="150">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" FontSize="15" HorizontalAlignment="Center"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Text="{Binding BlacklistProcess}" Grid.Column="0" Width="95" Height="40" HorizontalAlignment="Left" Margin="10,9,0,9"/>
+            <Button Content="Add Blacklist" Grid.Column="0" Width="75" Height="40" HorizontalAlignment="Right" Command="{Binding AddBlacklistCommand}"/>
+
+            <TextBox Text="{Binding NewProcess}" Grid.Column="1" Width="400" Height="40" Margin="10,0" HorizontalAlignment="Left"/>
+            <Button Content="End" Grid.Column="1" Width="85" Height="40" Margin="10,0" HorizontalAlignment="Right" FontSize="15" Command="{Binding EndCommand}"/>
+            <Button Content="Create" Grid.Column="1" Width="85" Height="40" Margin="105,0" HorizontalAlignment="Right" FontSize="15" Command="{Binding CreateCommand}"/>
+        </Grid>
+    </Grid>
+</Window>

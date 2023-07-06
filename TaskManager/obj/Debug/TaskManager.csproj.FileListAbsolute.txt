@@ -1,0 +1,16 @@
+C:\Users\Farid\source\repos\TaskManager\TaskManager\bin\Debug\TaskManager.exe.config
+C:\Users\Farid\source\repos\TaskManager\TaskManager\bin\Debug\TaskManager.exe
+C:\Users\Farid\source\repos\TaskManager\TaskManager\bin\Debug\TaskManager.pdb
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.AssemblyReference.cache
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\App.g.cs
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager_MarkupCompile.cache
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager_MarkupCompile.lref
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\Views\MainWindow.baml
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.g.resources
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.Properties.Resources.resources
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.GenerateResource.cache
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.CoreCompileInputs.cache
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.exe
+C:\Users\Farid\source\repos\TaskManager\TaskManager\obj\Debug\TaskManager.pdb
